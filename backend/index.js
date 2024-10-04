@@ -18,9 +18,7 @@ app.get("/", (req, res) => {
 
 //MongoDB connection first and then connect to server
 mongoose
-  .connect(
-    "mongodb+srv://rohailramesh:hBpPFwqSWHKkiqcW@cluster0.wa2db.mongodb.net/"
-  )
+  .connect("test")
   .then(() => {
     //Logging to the console whatever is being listened to
     app.listen(port, () => {
